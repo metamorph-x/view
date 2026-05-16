@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metamorph-X — Engineering Evolution</title>
+  <meta name="description" content="Metamorph-X: A tech collective engineering evolution through AI, full-stack, and mobile solutions.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER / NAVBAR
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">X</span>
+        Metamorph<span class="accent">-X</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#pillars">Core Pillars</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#pillars" onclick="closeMobileNav()">Core Pillars</a>
+    <a href="#team" onclick="closeMobileNav()">Team</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Building the future of intelligent software
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Evolution.<br>
+          <span class="line-gradient">Transforming Ideas.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          We are a forward-thinking tech collective crafting premium AI-powered,
+          full-stack, and mobile solutions — engineered for scale, built for impact.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#pillars" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i>
+            View Our Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-regular fa-comment-dots"></i>
+            Get in Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span class="gradient-text">15+</span></div>
+            <div class="hero-stat-label">Projects Shipped</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span class="gradient-text">5</span></div>
+            <div class="hero-stat-label">Core Members</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span class="gradient-text">3+</span></div>
+            <div class="hero-stat-label">Years Building</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value"><span class="gradient-text">∞</span></div>
+            <div class="hero-stat-label">Lines of Code</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="section-label">
+              <i class="fa-solid fa-info-circle"></i>
+              Who We Are
+            </span>
+            <h2 class="section-title">
+              Modular Thinking.<br>
+              <span class="gradient-text">Scalable Impact.</span>
+            </h2>
+            <p class="section-desc">
+              Metamorph-X is not just a team — it's an ecosystem of passionate
+              developers, designers, and strategists dedicated to building
+              technology that adapts, scales, and transforms real-world challenges
+              into elegant digital solutions.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div>
+                  <h4>Modular Architecture</h4>
+                  <p>Every system we build is decomposed into reusable, independently deployable modules for maximum flexibility.</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                  <h4>Built for Scale</h4>
+                  <p>From MVP to millions of users — our solutions are engineered with horizontal scalability at the core.</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div>
+                  <h4>Real-World Impact</h4>
+                  <p>We focus on solving tangible problems — healthcare, education, local commerce — where technology matters most.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual reveal">
+            <div class="about-visual-card">
+              <div class="code-block">
+                <span class="comment">// Metamorph-X Philosophy</span><br><br>
+                <span class="keyword">const</span> <span class="function">metamorphX</span> <span class="operator">=</span> {<br>
+                &nbsp;&nbsp;<span class="string">"vision"</span><span class="operator">:</span> <span class="string">"Transform through code"</span>,<br>
+                &nbsp;&nbsp;<span class="string">"stack"</span><span class="operator">:</span> [<span class="string">"AI/ML"</span>, <span class="string">"Full-Stack"</span>, <span class="string">"Mobile"</span>],<br>
+                &nbsp;&nbsp;<span class="string">"principles"</span><span class="operator">:</span> {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"architecture"</span><span class="operator">:</span> <span class="string">"Clean &amp; MVVM"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"testing"</span><span class="operator">:</span> <span class="string">"TDD &amp; CI/CD"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"scale"</span><span class="operator">:</span> <span class="type">Infinity</span>,<br>
+                &nbsp;&nbsp;},<br>
+                &nbsp;&nbsp;<span class="function">build</span><span class="operator">()</span> {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Impact at scale 🚀"</span>;<br>
+                &nbsp;&nbsp;}<br>
+                };<br><br>
+                <span class="function">metamorphX</span>.<span class="function">build</span>();
+              </div>
+            </div>
+
+            <div class="floating-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="floating-badge-text">
+                Production Ready
+                <span>Enterprise-grade code quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================
+         CORE PILLARS SECTION
+         ============================================ -->
+    <section class="section" id="pillars">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">
+            <i class="fa-solid fa-layer-group"></i>
+            What Drives Us
+          </span>
+          <h2 class="section-title">
+            Our Core <span class="gradient-text">Pillars</span>
+          </h2>
+          <p class="section-desc mx-auto">
+            Three fundamental pillars form the backbone of everything we create —
+            ensuring excellence, impact, and innovation in every line of code.
+          </p>
+        </div>
+
+        <div class="pillars-grid stagger-children">
+          <!-- Pillar 1 -->
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h3>Architectural Excellence</h3>
+            <p>
+              We don't just write code — we architect systems. Every project
+              follows Clean Architecture, MVVM, and SOLID principles,
+              ensuring maintainable, testable, and scalable codebases.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">Clean Arch</span>
+              <span class="pillar-tag">MVVM</span>
+              <span class="pillar-tag">SOLID</span>
+              <span class="pillar-tag">DDD</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <h3>Community & Impact</h3>
+            <p>
+              Technology should serve people. We build localized tech
+              solutions for real-world utility — from rural healthcare
+              platforms to community-driven educational tools.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">Local Tech</span>
+              <span class="pillar-tag">Social Impact</span>
+              <span class="pillar-tag">Accessibility</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>AI & Innovation</h3>
+            <p>
+              From smart automation pipelines to LLM-powered interfaces,
+              we integrate cutting-edge AI to make applications intelligent,
+              predictive, and autonomously adaptive.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">LLM</span>
+              <span class="pillar-tag">ML Ops</span>
+              <span class="pillar-tag">Automation</span>
+              <span class="pillar-tag">NLP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TEAM SECTION
+         ============================================ -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">
+            <i class="fa-solid fa-people-group"></i>
+            The Collective
+          </span>
+          <h2 class="section-title">
+            Meet the <span class="gradient-text">Team</span>
+          </h2>
+          <p class="section-desc mx-auto">
+            Five passionate engineers and creators driving Metamorph-X
+            forward — each bringing a unique edge to the collective.
+          </p>
+        </div>
+
+        <div class="team-grid stagger-children">
+          <!-- Member 1: Kaium Ahmed -->
+          <div class="team-card reveal">
+            <div class="team-avatar">KA</div>
+            <h3>Kaium Ahmed</h3>
+            <span class="team-role">Project Lead</span>
+            <p class="team-desc">
+              Visionary architect steering product strategy, system design, and cross-team alignment.
+            </p>
+            <div class="team-socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 2: Moktadur Rahman -->
+          <div class="team-card reveal">
+            <div class="team-avatar">MR</div>
+            <h3>Moktadur Rahman</h3>
+            <span class="team-role">Core Developer</span>
+            <p class="team-desc">
+              Backend powerhouse specializing in API design, database optimization, and cloud infra.
+            </p>
+            <div class="team-socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 3: Tofayel Ahmed -->
+          <div class="team-card reveal">
+            <div class="team-avatar">TA</div>
+            <h3>Tofayel Ahmed</h3>
+            <span class="team-role">Developer & QA</span>
+            <p class="team-desc">
+              Full-stack engineer with a sharp eye for quality — building robust, bug-free systems.
+            </p>
+            <div class="team-socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 4: Shahriar Ahmed -->
+          <div class="team-card reveal">
+            <div class="team-avatar">SA</div>
+            <h3>Shahriar Ahmed</h3>
+            <span class="team-role">UI/UX & Frontend</span>
+            <p class="team-desc">
+              Design-driven developer crafting pixel-perfect interfaces and seamless user experiences.
+            </p>
+            <div class="team-socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 5: Toybur Rahman -->
+          <div class="team-card reveal">
+            <div class="team-avatar">TR</div>
+            <h3>Toybur Rahman</h3>
+            <span class="team-role">Ops & Deployment</span>
+            <p class="team-desc">
+              DevOps specialist managing CI/CD, cloud deployments, and production reliability.
+            </p>
+            <div class="team-socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-wrapper reveal">
+          <span class="section-label">
+            <i class="fa-solid fa-paper-plane"></i>
+            Let's Connect
+          </span>
+          <h2 class="section-title">
+            Ready to Build<br>
+            <span class="gradient-text">Something Great?</span>
+          </h2>
+          <p class="section-desc mx-auto">
+            Whether you have a project in mind, want to collaborate, or just
+            want to say hello — we'd love to hear from you. Let's engineer
+            the future together.
+          </p>
+
+          <div class="hero-buttons" style="margin-bottom: 40px;">
+            <a href="mailto:hello@metamorph-x.dev" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i>
+              Send us an Email
+            </a>
+            <a href="#" class="btn btn-outline">
+              <i class="fa-solid fa-calendar-check"></i>
+              Schedule a Call
+            </a>
+          </div>
+
+          <div class="contact-links">
+            <div class="contact-link-card">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="contact-link-card">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </div>
+            <div class="contact-link-card">
+              <i class="fa-brands fa-discord"></i>
+              <span>Discord</span>
+            </div>
+            <div class="contact-link-card">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>Twitter / X</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          Metamorph<span class="accent">-X</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025 <span class="accent">Metamorph-X</span>. All rights reserved. Engineered with precision.
+        </p>
+        <a href="#hero" class="back-to-top">
+          <i class="fa-solid fa-arrow-up"></i>
+          Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       JAVASCRIPT — Scroll Reveal & Mobile Nav
+       ============================================ -->
+  <script>
+    // ---- Mobile Navigation Toggle ----
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+      // Animate hamburger to X
+      const spans = mobileToggle.querySelectorAll('span');
+      if (mobileNav.classList.contains('active')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        document.body.style.overflow = 'hidden';
+      } else {
+        closeMobileNav();
+      }
+    });
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('active');
+      const spans = mobileToggle.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+      document.body.style.overflow = '';
+    }
+
+    // ---- Scroll Reveal (Intersection Observer) ----
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- Sticky header shadow on scroll ----
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.3)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
